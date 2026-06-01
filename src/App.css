@@ -1,0 +1,100 @@
+.app-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  background: #21252b;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* ===== Tool Page ===== */
+.tool-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.tool-topbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 24px;
+  background: #1a1d23;
+  border-bottom: 1px solid #2d3139;
+  gap: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.back-btn {
+  padding: 5px 12px;
+  background: #252830;
+  border: 1px solid #2d3139;
+  border-radius: 6px;
+  color: #adbac7;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.12s;
+  flex-shrink: 0;
+}
+
+.back-btn:hover {
+  background: #30363d;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #e1e4e8;
+}
+
+.breadcrumb-dim {
+  color: #545d6b;
+}
+
+.breadcrumb-sep {
+  margin: 0 5px;
+  color: #2d3139;
+}
+
+.tool-content {
+  flex: 1;
+}
+
+/* ===== States ===== */
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  color: #768390;
+  gap: 14px;
+}
+
+.not-found button {
+  padding: 7px 18px;
+  background: #539bf5;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+
+.not-found button:hover {
+  background: #79b8ff;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  color: #545d6b;
+  font-size: 14px;
+}

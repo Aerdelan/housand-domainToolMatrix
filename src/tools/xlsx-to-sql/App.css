@@ -1,0 +1,360 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #58a6ff;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #8b949e;
+}
+
+/* Drop zone */
+.drop-zone {
+  position: relative;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 40px 24px;
+  text-align: center;
+  transition: border-color 0.2s, background 0.2s;
+  background: var(--bg-secondary);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.drop-zone.drag-over {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.drop-zone.has-file {
+  border-style: solid;
+  border-color: var(--success);
+}
+
+.drop-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+.drop-icon {
+  font-size: 36px;
+}
+
+.file-loaded {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.file-icon {
+  font-size: 24px;
+}
+
+.file-name {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.file-sheets {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.file-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Error */
+.error {
+  padding: 12px;
+  background: #2d1215;
+  border: 1px solid #da3633;
+  border-radius: 6px;
+  color: #f85149;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+/* Sheet tabs */
+.sheet-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sheet-tab {
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 13px;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.sheet-tab:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.sheet-tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.sheet-row-count {
+  margin-left: 6px;
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+/* Section title */
+.section-title {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* Preview table */
+.preview-section {
+  margin-bottom: 24px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.data-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.data-table th {
+  background: var(--bg-tertiary);
+  color: var(--accent-light);
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.data-table td {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.data-table tbody tr:hover td {
+  background: var(--bg-hover);
+}
+
+.row-num {
+  width: 48px;
+  color: var(--text-muted) !important;
+  font-size: 11px;
+  text-align: center !important;
+}
+
+.data-table th.row-num {
+  color: var(--text-muted) !important;
+}
+
+.preview-hint {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* Options bar */
+.options-bar {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.option-group > label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table-name-input {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--input-bg);
+  color: var(--text-primary);
+  font-size: 14px;
+  width: 200px;
+  font-family: 'Consolas', monospace;
+}
+
+.table-name-input:focus {
+  border-color: var(--accent);
+}
+
+.dialect-btns {
+  display: flex;
+  gap: 4px;
+}
+
+.dialect-btns button {
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  font-size: 13px;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.dialect-btns button:hover {
+  background: var(--bg-hover);
+}
+
+.dialect-btns button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+/* SQL output */
+.sql-output-section {
+  margin-bottom: 16px;
+}
+
+.sql-output-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.sql-output-header .section-title {
+  margin-bottom: 0;
+}
+
+.sql-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.sql-btn {
+  padding: 8px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.sql-btn.copy {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.sql-btn.copy:hover {
+  background: var(--bg-hover);
+}
+
+.sql-btn.download {
+  background: #238636;
+  border-color: #238636;
+  color: #fff;
+}
+
+.sql-btn.download:hover {
+  background: #2ea043;
+}
+
+.sql-output {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-secondary);
+  color: #7ee787;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-x: auto;
+  max-height: 500px;
+  overflow-y: auto;
+  white-space: pre;
+  tab-size: 2;
+}

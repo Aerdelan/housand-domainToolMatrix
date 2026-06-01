@@ -1,0 +1,20 @@
+.app { max-width: 1200px; margin: 0 auto; padding: 24px; }
+.header { text-align: center; margin-bottom: 20px; }
+.header h1 { font-size: 28px; color: #58a6ff; }
+.subtitle { font-size: 14px; color: #8b949e; }
+
+.mode-bar { display: flex; gap: 6px; margin-bottom: 20px; justify-content: center; flex-wrap: wrap; }
+.mode-bar button { padding: 8px 16px; border: 1px solid #30363d; border-radius: 6px; background: #161b22; color: #c9d1d9; cursor: pointer; font-size: 13px; }
+.mode-bar button.active { background: #1f6feb; border-color: #1f6feb; color: #fff; }
+.mode-bar button:hover:not(.active) { background: #21262d; }
+
+.panels { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.panel { display: flex; flex-direction: column; }
+.panel label { font-size: 13px; color: #8b949e; margin-bottom: 6px; font-weight: 600; }
+.panel textarea { flex: 1; min-height: 380px; padding: 12px; border: 1px solid #30363d; border-radius: 6px; background: #161b22; color: #c9d1d9; font-family: 'Consolas', 'Monaco', monospace; font-size: 13px; resize: vertical; outline: none; }
+.panel textarea:focus { border-color: #1f6feb; }
+
+.error { padding: 12px; background: #2d1215; border: 1px solid #da3633; border-radius: 6px; color: #f85149; font-family: 'Consolas', monospace; font-size: 13px; white-space: pre-wrap; }
+
+.convert-btn { display: block; margin: 0 auto; padding: 10px 40px; border: none; border-radius: 6px; background: #238636; color: #fff; font-size: 15px; cursor: pointer; }
+.convert-btn:hover { background: #2ea043; }

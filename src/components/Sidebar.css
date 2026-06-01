@@ -1,0 +1,141 @@
+.sidebar {
+  width: 250px;
+  min-width: 250px;
+  height: 100vh;
+  background: #1a1d23;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #2d3139;
+  overflow: hidden;
+  user-select: none;
+}
+
+.sidebar-logo {
+  padding: 20px 20px 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #e1e4e8;
+  letter-spacing: 1px;
+}
+
+.sidebar-search {
+  padding: 0 16px 12px;
+}
+
+.sidebar-search input {
+  width: 100%;
+  padding: 7px 10px;
+  background: #252830;
+  border: 1px solid #2d3139;
+  border-radius: 6px;
+  color: #e1e4e8;
+  font-size: 12px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.sidebar-search input::placeholder {
+  color: #545d6b;
+}
+
+.sidebar-search input:focus {
+  border-color: #539bf5;
+}
+
+.sidebar-nav {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 8px;
+}
+
+.sidebar-cat {
+  margin-bottom: 2px;
+}
+
+.sidebar-cat-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #768390;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background 0.12s;
+}
+
+.sidebar-cat-header:hover {
+  background: #252830;
+}
+
+.cat-arrow {
+  font-size: 10px;
+  width: 12px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.cat-name {
+  flex: 1;
+}
+
+.cat-count {
+  font-size: 10px;
+  color: #545d6b;
+  background: #252830;
+  padding: 1px 6px;
+  border-radius: 10px;
+  min-width: 18px;
+  text-align: center;
+}
+
+.sidebar-tools {
+  padding-left: 8px;
+}
+
+.sidebar-tool {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #adbac7;
+  transition: background 0.12s, color 0.12s;
+}
+
+.sidebar-tool:hover {
+  background: #252830;
+}
+
+.sidebar-tool.active {
+  background: #30363d;
+  color: #539bf5;
+}
+
+.tool-emoji {
+  font-size: 14px;
+  flex-shrink: 0;
+  width: 18px;
+  text-align: center;
+}
+
+.tool-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-footer {
+  padding: 10px 16px;
+  border-top: 1px solid #2d3139;
+  font-size: 11px;
+  color: #545d6b;
+  text-align: center;
+  flex-shrink: 0;
+}

@@ -1,0 +1,32 @@
+.app { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.header { text-align: center; margin-bottom: 20px; }
+.header h1 { font-size: 28px; color: #58a6ff; }
+.subtitle { font-size: 14px; color: #8b949e; }
+
+.regex-input-row { display: flex; align-items: center; gap: 4px; margin-bottom: 16px; background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 8px 12px; }
+.delimiter { color: #f0883e; font-size: 20px; font-weight: bold; }
+.pattern-input { flex: 1; background: transparent; border: none; color: #7ee787; font-family: 'Consolas', monospace; font-size: 16px; outline: none; }
+.flags { display: flex; gap: 8px; }
+.flags label { color: #c9d1d9; font-size: 14px; cursor: pointer; display: flex; align-items: center; gap: 2px; }
+
+.presets { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
+.presets button { padding: 5px 12px; border: 1px solid #30363d; border-radius: 4px; background: #21262d; color: #c9d1d9; cursor: pointer; font-size: 12px; }
+.presets button:hover { background: #30363d; }
+
+.panels { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.panel { display: flex; flex-direction: column; }
+.panel label { font-size: 13px; color: #8b949e; margin-bottom: 6px; font-weight: 600; }
+.panel textarea { min-height: 280px; padding: 12px; border: 1px solid #30363d; border-radius: 6px; background: #161b22; color: #c9d1d9; font-family: 'Consolas', monospace; font-size: 14px; resize: vertical; outline: none; }
+.panel textarea:focus { border-color: #1f6feb; }
+
+.highlight-box { min-height: 280px; padding: 12px; border: 1px solid #30363d; border-radius: 6px; background: #161b22; font-family: 'Consolas', monospace; font-size: 14px; white-space: pre-wrap; word-break: break-all; color: #c9d1d9; }
+.highlight-box mark { background: #f0a03044; color: #f0a030; border-radius: 2px; padding: 0 1px; }
+
+.error { padding: 12px; background: #2d1215; border: 1px solid #da3633; border-radius: 6px; color: #f85149; font-family: 'Consolas', monospace; font-size: 13px; }
+
+.results { margin-top: 8px; }
+.results h3 { font-size: 15px; color: #8b949e; margin-bottom: 8px; }
+.results table { width: 100%; border-collapse: collapse; }
+.results th, .results td { padding: 6px 10px; border: 1px solid #30363d; font-size: 13px; text-align: left; font-family: 'Consolas', monospace; }
+.results th { background: #21262d; color: #8b949e; }
+.results .full-match { background: #f0a03022; }

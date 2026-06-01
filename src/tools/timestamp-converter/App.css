@@ -1,0 +1,31 @@
+.app { max-width: 800px; margin: 0 auto; padding: 24px; }
+.header { text-align: center; margin-bottom: 20px; }
+.header h1 { font-size: 28px; color: #58a6ff; }
+.subtitle { font-size: 14px; color: #8b949e; }
+
+.realtime { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px 24px; margin-bottom: 24px; }
+.realtime-label { font-size: 13px; color: #8b949e; margin-bottom: 10px; font-weight: 600; }
+.realtime-values { display: flex; gap: 32px; flex-wrap: wrap; }
+.realtime-values > div { display: flex; flex-direction: column; gap: 4px; }
+.realtime-values span { font-size: 11px; color: #8b949e; }
+.realtime-values code { font-size: 16px; color: #7ee787; font-family: 'Consolas', monospace; }
+
+.section { margin-bottom: 24px; }
+.section h3 { font-size: 16px; color: #c9d1d9; margin-bottom: 12px; border-bottom: 1px solid #21262d; padding-bottom: 6px; }
+
+.input-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.main-input { flex: 1; min-width: 200px; padding: 10px 14px; border: 1px solid #30363d; border-radius: 6px; background: #161b22; color: #c9d1d9; font-size: 15px; font-family: 'Consolas', monospace; outline: none; }
+.main-input:focus { border-color: #1f6feb; }
+.input-row button { padding: 10px 20px; border: none; border-radius: 6px; background: #238636; color: #fff; cursor: pointer; font-size: 14px; }
+.input-row button:hover { background: #2ea043; }
+
+.toggle { display: flex; align-items: center; gap: 4px; font-size: 13px; color: #c9d1d9; cursor: pointer; }
+
+.error { padding: 10px; background: #2d1215; border: 1px solid #da3633; border-radius: 6px; color: #f85149; font-size: 13px; margin-top: 8px; }
+
+pre.result { margin-top: 10px; padding: 14px; background: #161b22; border: 1px solid #30363d; border-radius: 6px; color: #7ee787; font-family: 'Consolas', monospace; font-size: 14px; white-space: pre-wrap; }
+
+.zone-grid { display: flex; align-items: center; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+.zone-grid label { font-size: 13px; color: #8b949e; }
+.zone-grid select { padding: 6px 10px; border: 1px solid #30363d; border-radius: 4px; background: #161b22; color: #c9d1d9; font-size: 13px; outline: none; }
+.zone-grid code { font-size: 14px; color: #d2a8ff; font-family: 'Consolas', monospace; }

@@ -1,0 +1,192 @@
+.app {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 28px 16px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.header h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.tab {
+  padding: 6px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.15s;
+}
+
+.tab:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.tab.active {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Calculator container */
+.calc-container {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Display */
+.display {
+  padding: 20px 20px 16px;
+  text-align: right;
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border);
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.expression {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  min-height: 1.3em;
+  word-break: break-all;
+  margin-bottom: 6px;
+}
+
+.current {
+  font-size: 2rem;
+  font-weight: 300;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-primary);
+  word-break: break-all;
+  line-height: 1.2;
+}
+
+/* Mode toggle (scientific) */
+.mode-toggle {
+  display: flex;
+  gap: 4px;
+  padding: 10px 16px;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border);
+}
+
+.mode-toggle button {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 0.75rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.mode-toggle button.active {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Keypad */
+.keypad {
+  padding: 12px;
+}
+
+.key-row, .func-row {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.key-row {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.func-row {
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 10px;
+}
+
+.key {
+  padding: 12px 6px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.12s;
+  text-align: center;
+}
+
+.key:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-light);
+}
+
+.key:active {
+  transform: scale(0.96);
+}
+
+.key-op {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.key-equals {
+  background: var(--accent);
+  color: #0f0f0f;
+  font-weight: 700;
+  border-color: var(--accent);
+}
+
+.key-equals:hover {
+  background: var(--accent-hover);
+}
+
+.key-clear {
+  color: var(--danger);
+}
+
+.key-func {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+/* Remove spinners */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}

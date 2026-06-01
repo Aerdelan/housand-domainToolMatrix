@@ -1,0 +1,180 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: var(--bg-secondary);
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.header h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.subtitle {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.tabs {
+  display: flex;
+  background: var(--bg-secondary);
+  padding: 0 24px;
+  border-bottom: 1px solid var(--border);
+  gap: 4px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 14px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  color: var(--text-primary);
+}
+
+.tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.main {
+  flex: 1;
+  padding: 24px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent);
+}
+
+.file-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-card);
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.file-icon {
+  font-size: 18px;
+}
+
+.file-name {
+  flex: 1;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-pages {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.btn-remove {
+  background: transparent;
+  color: var(--danger);
+  font-size: 20px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.btn-remove:hover {
+  background: rgba(239, 68, 68, 0.15);
+}
+
+.options-section {
+  margin-bottom: 16px;
+}
+
+.option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.option-group label {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.option-group input[type="text"] {
+  max-width: 300px;
+}
+
+.option-group input[type="range"] {
+  max-width: 300px;
+  accent-color: var(--accent);
+}
+
+.status {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: var(--bg-card);
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid var(--border);
+}

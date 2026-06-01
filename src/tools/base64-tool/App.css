@@ -1,0 +1,42 @@
+.app { max-width: 1000px; margin: 0 auto; padding: 24px; }
+.header { text-align: center; margin-bottom: 20px; }
+.header h1 { font-size: 28px; color: #58a6ff; }
+.subtitle { font-size: 14px; color: #8b949e; }
+
+.tab-bar { display: flex; gap: 6px; margin-bottom: 20px; justify-content: center; }
+.tab-bar button { padding: 8px 20px; border: 1px solid #30363d; border-radius: 6px; background: #161b22; color: #c9d1d9; cursor: pointer; font-size: 14px; }
+.tab-bar button.active { background: #1f6feb; border-color: #1f6feb; color: #fff; }
+.tab-bar button:hover:not(.active) { background: #21262d; }
+
+.panels { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.panel { display: flex; flex-direction: column; }
+.panel label { font-size: 13px; color: #8b949e; margin-bottom: 6px; font-weight: 600; }
+.panel textarea { min-height: 300px; padding: 12px; border: 1px solid #30363d; border-radius: 6px; background: #161b22; color: #c9d1d9; font-family: 'Consolas', monospace; font-size: 14px; resize: vertical; outline: none; }
+.panel textarea:focus { border-color: #1f6feb; }
+
+.action-row { display: flex; gap: 10px; justify-content: center; }
+.action-btn { padding: 10px 24px; border: 1px solid #30363d; border-radius: 6px; background: #238636; color: #fff; cursor: pointer; font-size: 14px; }
+.action-btn:hover { background: #2ea043; }
+.action-btn.copy { background: #21262d; }
+.action-btn.copy:hover { background: #30363d; }
+
+.error { padding: 12px; background: #2d1215; border: 1px solid #da3633; border-radius: 6px; color: #f85149; font-size: 13px; margin-top: 10px; }
+
+.image-section, .file-section { display: flex; flex-direction: column; gap: 16px; }
+.image-actions, .file-actions { display: flex; flex-direction: column; gap: 10px; }
+.upload-label { font-size: 14px; color: #8b949e; font-weight: 600; }
+.upload-area { display: flex; flex-direction: column; gap: 8px; }
+
+.decode-area { display: flex; flex-direction: column; gap: 8px; }
+.decode-area textarea { padding: 10px; border: 1px solid #30363d; border-radius: 6px; background: #161b22; color: #c9d1d9; font-family: 'Consolas', monospace; font-size: 13px; outline: none; resize: vertical; }
+.decode-area textarea:focus { border-color: #1f6feb; }
+.decode-area button { align-self: flex-start; padding: 6px 16px; border: 1px solid #30363d; border-radius: 4px; background: #1f6feb; color: #fff; cursor: pointer; font-size: 13px; }
+
+.image-preview { margin-top: 8px; }
+.image-preview img { max-width: 100%; max-height: 400px; border-radius: 6px; border: 1px solid #30363d; }
+
+.output-text { display: flex; flex-direction: column; gap: 6px; }
+.output-text label { font-size: 13px; color: #8b949e; font-weight: 600; }
+.output-text textarea { padding: 10px; border: 1px solid #30363d; border-radius: 6px; background: #161b22; color: #7ee787; font-family: 'Consolas', monospace; font-size: 12px; outline: none; resize: vertical; }
+
+.hint { font-size: 12px; color: #8b949e; }
