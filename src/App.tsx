@@ -1,5 +1,5 @@
-import { Suspense, lazy } from 'react'
-import { Routes, Route, useParams, useNavigate } from 'react-router-dom'
+import { Suspense, lazy, useState, useEffect, useCallback } from 'react'
+import { Routes, Route, useParams, useNavigate, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Sidebar from './components/Sidebar'
 import HomePage from './components/HomePage'
