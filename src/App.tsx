@@ -3,6 +3,7 @@ import { Routes, Route, useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Sidebar from './components/Sidebar'
 import HomePage from './components/HomePage'
+import TopBar from './components/TopBar'
 import { categories } from './tools'
 import './App.css'
 
@@ -92,6 +93,7 @@ export default function App() {
     <div className="app-layout">
       <Sidebar />
       <main className="main-content">
+        <TopBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/tools/:toolId" element={<ToolPage />} />

@@ -37,6 +37,29 @@
   --cat-util: #55efc4;
 }
 
+:root[data-theme="light"] {
+  --bg-primary: #f6f8fa;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f3f4f6;
+  --bg-tertiary: #f0f2f5;
+  --bg-hover: #e8eaed;
+  --text-primary: #1f2328;
+  --text-secondary: #656d76;
+  --text-muted: #8b949e;
+  --accent: #0969da;
+  --accent-glow: rgba(9, 105, 218, 0.12);
+  --accent-light: #218bff;
+  --accent-hover: #0550ae;
+  --accent-dim: rgba(9, 105, 218, 0.08);
+  --border: #d0d7de;
+  --border-light: #d8dee4;
+  --input-bg: #f6f8fa;
+  --danger: #cf222e;
+  --warning: #bf8700;
+  --success: #1a7f37;
+}
+
 html, body, #root {
   height: 100%;
   width: 100%;

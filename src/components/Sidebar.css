@@ -2,10 +2,10 @@
   width: 250px;
   min-width: 250px;
   height: 100vh;
-  background: #1a1d23;
+  background: var(--bg-secondary);
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #2d3139;
+  border-right: 1px solid var(--border);
   overflow: hidden;
   user-select: none;
 }
@@ -14,7 +14,7 @@
   padding: 20px 20px 16px;
   font-size: 20px;
   font-weight: 700;
-  color: #e1e4e8;
+  color: var(--text-primary);
   letter-spacing: 1px;
 }
 
@@ -25,21 +25,21 @@
 .sidebar-search input {
   width: 100%;
   padding: 7px 10px;
-  background: #252830;
-  border: 1px solid #2d3139;
+  background: var(--input-bg);
+  border: 1px solid var(--border);
   border-radius: 6px;
-  color: #e1e4e8;
+  color: var(--text-primary);
   font-size: 12px;
   outline: none;
   transition: border-color 0.15s;
 }
 
 .sidebar-search input::placeholder {
-  color: #545d6b;
+  color: var(--text-muted);
 }
 
 .sidebar-search input:focus {
-  border-color: #539bf5;
+  border-color: var(--accent);
 }
 
 .sidebar-nav {
@@ -62,14 +62,14 @@
   border-radius: 6px;
   font-size: 11px;
   font-weight: 600;
-  color: #768390;
+  color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: background 0.12s;
 }
 
 .sidebar-cat-header:hover {
-  background: #252830;
+  background: var(--bg-tertiary);
 }
 
 .cat-arrow {
@@ -85,8 +85,8 @@
 
 .cat-count {
   font-size: 10px;
-  color: #545d6b;
-  background: #252830;
+  color: var(--text-muted);
+  background: var(--bg-tertiary);
   padding: 1px 6px;
   border-radius: 10px;
   min-width: 18px;
@@ -105,17 +105,17 @@
   cursor: pointer;
   border-radius: 6px;
   font-size: 13px;
-  color: #adbac7;
+  color: var(--text-secondary);
   transition: background 0.12s, color 0.12s;
 }
 
 .sidebar-tool:hover {
-  background: #252830;
+  background: var(--bg-tertiary);
 }
 
 .sidebar-tool.active {
-  background: #30363d;
-  color: #539bf5;
+  background: var(--bg-hover);
+  color: var(--accent);
 }
 
 .tool-emoji {
@@ -133,9 +133,31 @@
 
 .sidebar-footer {
   padding: 10px 16px;
-  border-top: 1px solid #2d3139;
+  border-top: 1px solid var(--border);
   font-size: 11px;
-  color: #545d6b;
+  color: var(--text-muted);
   text-align: center;
   flex-shrink: 0;
+}
+
+.lang-toggle {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 6px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-secondary);
+  font-size: 11px;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+
+.lang-toggle:hover {
+  background: var(--bg-hover);
+}
+
+.version {
+  display: block;
+  color: var(--text-muted);
 }

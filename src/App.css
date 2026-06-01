@@ -6,7 +6,7 @@
 
 .main-content {
   flex: 1;
-  background: #21252b;
+  background: var(--bg-primary);
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -22,20 +22,20 @@
   display: flex;
   align-items: center;
   padding: 10px 24px;
-  background: #1a1d23;
-  border-bottom: 1px solid #2d3139;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
   gap: 16px;
   position: sticky;
-  top: 0;
+  top: 40px;
   z-index: 10;
 }
 
 .back-btn {
   padding: 5px 12px;
-  background: #252830;
-  border: 1px solid #2d3139;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
   border-radius: 6px;
-  color: #adbac7;
+  color: var(--text-secondary);
   font-size: 12px;
   cursor: pointer;
   transition: background 0.12s;
@@ -43,21 +43,21 @@
 }
 
 .back-btn:hover {
-  background: #30363d;
+  background: var(--bg-hover);
 }
 
 .breadcrumb {
   font-size: 13px;
-  color: #e1e4e8;
+  color: var(--text-primary);
 }
 
 .breadcrumb-dim {
-  color: #545d6b;
+  color: var(--text-muted);
 }
 
 .breadcrumb-sep {
   margin: 0 5px;
-  color: #2d3139;
+  color: var(--border);
 }
 
 .tool-content {
@@ -71,13 +71,13 @@
   align-items: center;
   justify-content: center;
   min-height: 300px;
-  color: #768390;
+  color: var(--text-muted);
   gap: 14px;
 }
 
 .not-found button {
   padding: 7px 18px;
-  background: #539bf5;
+  background: var(--accent);
   border: none;
   border-radius: 6px;
   color: #fff;
@@ -87,7 +87,7 @@
 }
 
 .not-found button:hover {
-  background: #79b8ff;
+  background: var(--accent-hover);
 }
 
 .loading {
@@ -95,6 +95,6 @@
   align-items: center;
   justify-content: center;
   min-height: 300px;
-  color: #545d6b;
+  color: var(--text-muted);
   font-size: 14px;
 }
