@@ -25,6 +25,10 @@
   <sub>纯前端实现 · 数据不上传 · 开箱即用</sub>
 </p>
 
+<p align="center">
+  <a href="README.md"><b>中文</b></a> &nbsp;|&nbsp; <a href="README_EN.md">English</a>
+</p>
+
 ---
 
 ## ✨ 特性亮点
@@ -127,9 +131,9 @@ npm run build && npx electron-builder
 |:---:|:---:|:---:|
 | ![home](screenshots/home.png) | ![json](screenshots/json.png) | ![image](screenshots/image.png) |
 
-| PDF 工具 | Markdown 编辑器 | 深色主题 |
+| PDF 工具 | Markdown 编辑器 | Excel转SQL |
 |:---:|:---:|:---:|
-| ![pdf](screenshots/pdf.png) | ![md](screenshots/markdown.png) | ![dark](screenshots/dark-theme.png) |
+| ![pdf](screenshots/pdf.png) | ![md](screenshots/markdown.png) | ![excel-to-sql](screenshots/excel-to-sql.png) |
 
 ---
 
@@ -208,5 +212,5 @@ tool-hub/
 ---
 
 <p align="center">
-  <sub>Made with ❤️ by ToolHub Team · 2024</sub>
+  <sub>Made with ❤️ by ToolHub Team · 2026</sub>
 </p>
